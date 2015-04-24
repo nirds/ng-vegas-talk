@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="ng-vegas">
+  <head>
+    <base href="/">
+    <title>NgVegasTalk</title>
+    <%= stylesheet_link_tag    'application', media: {'all' => true} %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <%= yield %>
+
+  </body>
+</html>

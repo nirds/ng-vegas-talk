@@ -1,3 +1,7 @@
 {{foo}}
 
 {{2 + 2}}
+
+%ul
+  %li{"ng-repeat" => "todo in todos"}
+    %a{href: "{{todo.url}}"}{{todo.name}}

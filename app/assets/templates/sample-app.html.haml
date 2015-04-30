@@ -1,5 +1,16 @@
-To do for ng-vegas
+%h1 To do for ng-vegas
 
-%ul{class: "list-group"}
-  %li{"ng-repeat" => "todo in todos", class: "list-group-item"}
-    %a{href: "{{todo.url}}"}{{todo.name}}
+%h2 Completed items
+%ul
+  %li{"ng-repeat" => "todo in todos | filter:{done:true}"} {{todo.name}}
+
+%h2 Incomplete items
+%ul
+  %li{"ng-repeat" => "todo in todos", "ng-if" => "!todo.done"} {{todo.name}}
+
+%h2 All items
+%ul
+  %li{"ng-repeat" => "todo in todos"}
+    {{todo.name}}
+    %span{"ng-click" => "completeItem(todo)", "ng-show" => "!todo.done"}{complete task}
+    %span{"ng-click" => "reopenItem(todo)", "ng-show" => "todo.done"}{reopen task}

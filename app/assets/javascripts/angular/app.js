@@ -4,8 +4,8 @@ app.config(["$routeProvider", "$locationProvider", function($routeProvider, $loc
   $locationProvider.html5Mode(true);
   $routeProvider
     .when("/",
-      { templateUrl: "cover.html",
-        controller: "CoverController" })
+      { templateUrl: "sample-app.html",
+        controller: "SampleAppController" })
     .when("/1",
       { templateUrl: "one.html",
         controller: "PageOneController" })

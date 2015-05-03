@@ -2,11 +2,11 @@
 
 %h2 Completed items
 %ul
-  %li{"ng-repeat" => "todo in todos | filter:{done:true}"} {{todo.name}}
+  %li{"ng-repeat" => "completedTodo in todos | filter:{done:true}"} {{completedTodo.name}}
 
 %h2 Incomplete items
 %ul
-  %li{"ng-repeat" => "todo in todos", "ng-if" => "!todo.done"} {{todo.name}}
+  %li{"ng-repeat" => "incompleteTodo in todos | filter:{done:false}"} {{incompleteTodo.name}}
 
 %h2 All items
 %ul

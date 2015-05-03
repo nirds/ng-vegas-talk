@@ -12,5 +12,5 @@ arr = [
 ]
 
 10.times do |i|
-  Todo.create name: arr[i], order: i 
+  Todo.create name: arr[i], order: i, done: false
 end

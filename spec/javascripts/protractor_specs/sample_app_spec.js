@@ -15,18 +15,5 @@ describe('homepage', function() {
         });
       });
     });
-
-    // it('finds an incomplete item and completes it on click', function() {
-    //   browser.get('http://localhost:3000');
-
-    //   element.all(by.repeater('todo in todos')).then(function(todos) {
-    //     element.all(by.repeater('completedTodos in todos')).then(function(completedTodos) {
-    //       startingCompleted = completedTodos.length
-    //       toComplete = todos.rows.column("complete task");
-    //       toComplete.click();
-    //       expect(completedTodos.length).toEqual(startingCompleted +1);
-    //     });
-    //   });
-    // });
   });
 });
